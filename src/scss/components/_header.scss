@@ -11,7 +11,9 @@
     display: flex;
     display: -ms-flexbox;
     justify-content: center;
+    align-items: center;
     padding: 15px 40px;
+    flex-wrap: wrap;
   }
   &__links {
     position: relative;
@@ -26,8 +28,23 @@
     letter-spacing: 0.1em;
   }
   &__bag-text {
+    margin-left: 10px;
     font-size: 14px;
     color: rgb(255, 0, 0);
     cursor: pointer;
+  }
+}
+
+@media (max-width: 570px) {
+  .header__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__links {
+    display: none;
   }
 }

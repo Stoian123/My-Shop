@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  justify-content: center;
+  li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    a {
+      padding: 10px 15px;
+      border: 1px solid rgb(78, 78, 78);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .3s ease;
+      display: inline-block;
+      &:hover {
+        border: 1px solid rgb(173, 173, 173);
+      }
+    }
+  }
+  :global {
+    .previous a,
+    .next a {
+      border: none !important;
+      &:hover {
+        opacity: .5;
+      }
+    }
+    .selected {
+      border-radius: 5px;
+      border: 1px solid rgb(173, 173, 173);
+    }
+  }
+  padding-top: 40px;
+  padding-bottom: 80px;
+}

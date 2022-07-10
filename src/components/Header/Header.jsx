@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from '../Search/Search';
 
-function Header() {
+function Header({ searchValue, setSearchValue }) {
   return (
     <header className='header'>
       <div className='header__inner'>
@@ -19,9 +20,10 @@ function Header() {
           </Link>
         </div>
         <div className='header__bag'>
-          <Link className='header__bag-text' to='/bag'>
+          <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+          {/* <Link className='header__bag-text' to='/bag'>
             in bag 0
-          </Link>
+          </Link> */}
         </div>
       </div>
     </header>
