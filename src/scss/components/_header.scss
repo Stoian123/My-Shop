@@ -1,0 +1,33 @@
+.header {
+  background-color: $background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  &__inner {
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    padding: 15px 40px;
+  }
+  &__links {
+    position: relative;
+    display: block;
+  }
+  .link + * {
+    margin-left: 15px;
+  }
+  &__logo {
+    margin: 0 auto;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  &__bag-text {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+}

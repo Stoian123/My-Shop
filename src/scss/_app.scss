@@ -1,0 +1,14 @@
+@import './_variables.scss';
+@import './libs/_normalize.scss';
+@import './components/_all.scss';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  background-color: $background;
+  font-style: 100%;
+}
+.wrapper {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
