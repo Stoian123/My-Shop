@@ -1,11 +1,13 @@
 import React from 'react';
+import { SearchContext } from '../App';
 import Filter from '../components/Filter/Filter';
 import News from '../components/News/News';
 import Pagination from '../components/Pagination/Pagination';
 import Product from '../components/Product/Product';
 import Skeleton from '../components/Product/Skeleton';
 
-function Home({ searchValue }) {
+function Home() {
+  const { searchValue } = React.useContext(SearchContext);
   const categories = ['Sale', 'Clothing', 'Shoes', 'Bags'];
   const [product, setProduct] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
